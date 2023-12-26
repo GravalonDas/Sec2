@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Website Title Here</title>
+    <style>
+        /* Grid for images with width="1536" height="1024" */
+        .vertical-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(1536px, 1fr));
+            gap: 10px;
+            justify-content: center;
+        }
+
+        /* Grid for images with width="618" height="1024" */
+        .horizontal-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+        }
+
+        /* Style for individual images */
+
+        body {
+             background-color: black;
+}
+
+        img {
+            border: 1px solid #ddd;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 100%;
+            width: 40%;
+            height: 100%;
+        }
+
+.vertical-grid2 {
+  display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+    </style>
+</head>
+<body>
+
+    <div class="vertical-grid">
+        <!-- Images with width="1536" height="1024" -->
+<img src="https://media1.tenor.com/m/zM4iCMM3fEMAAAAC/sunny-leone-rain-dance.gif" alt="Your Alt Text" width="1024" height="618" onclick="expandImage(this)">
+<img src="https://pornogifs.net/wp-content/uploads/2020/08/33937806.gif" alt="Your Alt Text" width="1024" height="618" onclick="expandImage(this)">
+<img src="https://i.makeagif.com/media/4-09-2015/n0jpQx.gif" alt="Your Alt Text" width="1024" height="618" onclick="expandImage(this)">
+
+
+        
+        <!-- Add more images with the same dimensions here -->
+    </div>
+
+<div class="vertical-grid2">
+
+<video width="1024" height="618" controls>
+            <source src="vid (1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+<video width="1024" height="618" controls>
+            <source src="vid (2).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+
+  
+    </div>
+
+    <div class="horizontal-grid">
+        <!-- Images with width="618" height="1024" -->
+        <img src="https://thumb-p2.xhcdn.com/a/Vj4wHAxjElJomuTeKGSAGA/000/392/254/762_1000.gif" alt="Your Alt Text" width="618" height="1024" onclick="expandImage(this)">
+        <img src="https://3.bp.blogspot.com/-Qsy5_0sswU0/Voz_W09NNlI/AAAAAAAAEaY/DQR-Fdh46J4/s1600/7c579534309f56450049b8a3cc1752ed.gif" alt="Your Alt Text" width="618" height="1024" onclick="expandImage(this)">
+<img src="https://th.bing.com/th/id/R.539143c36a7659091b23fa2d849be251?rik=zdpmfYMs8iOc4w&riu=http%3a%2f%2f33.media.tumblr.com%2fee54e5818450c8394979d877aa4f8aba%2ftumblr_n3sja40TAB1s427a3o1_400.gif&ehk=ZCYCcZs8cNMPn%2fDMBE1CUJa5QUnt%2fIgdTpAQZSqYQZ0%3d&risl=&pid=ImgRaw&r=0" alt="Your Alt Text" width="618" height="1024" onclick="expandImage(this)">
+<img src="https://qph.cf2.quoracdn.net/main-qimg-796db3ec844771129b59c47b2e6d6f56" alt="Your Alt Text" width="618" height="1024" onclick="expandImage(this)">
+<img src="https://geeksoncoffee.com/wp-content/uploads/2019/10/Shakira-booty-Gif.gif" alt="Your Alt Text" width="618" height="1024" onclick="expandImage(this)">
+<img src="https://media1.tenor.com/m/ASMoDLdw6hMAAAAC/softylingerie-softy.gif" alt="Your Alt Text" width="618" height="1024" onclick="expandImage(this)">
+<img src="https://media1.tenor.com/m/CaKxFAKgwlEAAAAC/shriya-navel-shriya-saran.gif" alt="Your Alt Text" width="618" height="1024" onclick="expandImage(this)">
+<img src="https://media1.tenor.com/m/0_6VVS9usWEAAAAC/dd88.gif" alt="Your Alt Text" width="618" height="1024" onclick="expandImage(this)">
+<img src="https://media1.tenor.com/m/7ShNnPqNzWMAAAAd/hot-bollywood.gif" alt="Your Alt Text" width="618" height="1024" onclick="expandImage(this)">
+
+
+
+
+
+
+        <!-- Add more images with the same dimensions here -->
+        <!-- Add more images with the same dimensions here -->
+    </div>
+
+    <!-- Modal for displaying enlarged image -->
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script>
+        function expandImage(img) {
+            document.getElementById('myModal').style.display = 'flex';
+            document.getElementById('modalImg').src = img.src;
+        }
+
+        // Close the modal when clicking outside the image
+        window.onclick = function (event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
